@@ -25,12 +25,10 @@ $ sudo apt update --fix-missing
 $ sudo apt upgrade
 $ sudo apt install build-essential
 $ sudo apt install cmake
-# $ sudo apt install firefox-esr
 ```
 
 ### 5. Get Python Essentials
 ```sh
-# $ sudo apt install python3
 $ sudo apt install python3-pip
 ```
 
