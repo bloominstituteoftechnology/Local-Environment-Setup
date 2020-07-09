@@ -62,12 +62,11 @@ $ pip install eli5 pdpbox shap plotly jupyter notebook
 ```
 
 ### 8. Configure Jupyter
-
 ```sh
 $ jupyter notebook --generate-config
 $ nano ~/.jupyter/jupyter_notebook_config.py
 ```
-
+Add the following to the bottom of `jupyter_notebook_config.py`...
 ```sh
 c.NotebookApp.allow_remote_access = True
 c.NotebookApp.browser = '/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
