@@ -2,7 +2,7 @@
 
 
 ### 0. Update Windows 10
-You may need to reboot.
+You may need to reboot after the update.
 
 ### 1. Enable WSL2 on Windows 10
 1. Open PowerShell as Admin
@@ -33,13 +33,13 @@ $ sudo apt install python3-pip
 ```
 
 ### 6. Add Bash Shortcuts
-Open the file named `.bashrc` in the nano text editor.
+- Open the file named `.bashrc` in the nano text editor.
 
 ```sh
 $ nano .bashrc
 ```
 
-Page down to the bottom of the file and add the following:
+- Page down to the bottom of the file and add the following:
 
 ```sh
 # Environment Variables
@@ -66,10 +66,11 @@ $ pip install eli5 pdpbox shap plotly jupyter notebook
 $ jupyter notebook --generate-config
 $ nano ~/.jupyter/jupyter_notebook_config.py
 ```
-Add the following to the bottom of `jupyter_notebook_config.py`...
+- Add the following to the bottom of `jupyter_notebook_config.py`...
 ```sh
 c.NotebookApp.allow_remote_access = True
 c.NotebookApp.browser = '/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
 c.NotebookApp.open_browser = True
 c.NotebookApp.use_redirect_file = False
 ```
+- Exit nano: `ctrl-x` and `y` then `ENTER` to save the file.
