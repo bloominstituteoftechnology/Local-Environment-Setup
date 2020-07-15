@@ -49,8 +49,6 @@ export PATH="$PATH:~/.local/bin"
 
 # CLI Shortcuts
 alias .bash="nano ~/.bashrc"
-alias python=python3
-alias pip=pip3
 ```
 - Exit nano: `ctrl-x` and `y` then `ENTER` to save the file.
 - Restart Ubuntu.
