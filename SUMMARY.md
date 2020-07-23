@@ -16,6 +16,7 @@
 
 * [Base Environment](installation-guides/base-environment/README.md)
   * [Windows](installation-guides/base-environment/windows.md)
+  * [WSL](installation-guides/base-environment/wsl.md)
   * [Mac](installation-guides/base-environment/mac.md)
   * [Linux](installation-guides/base-environment/linux.md)
 
