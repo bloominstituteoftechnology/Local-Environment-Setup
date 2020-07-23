@@ -18,7 +18,8 @@
 
 ## Installation Guides
 
-* [Windows](installation-guides/windows.md)
-* [Mac](installation-guides/mac.md)
-* [Linux](installation-guides/linux.md)
+* [Base Environment](installation-guides/base-environment/README.md)
+  * [Windows](installation-guides/base-environment/windows.md)
+  * [Mac](installation-guides/base-environment/mac.md)
+  * [Linux](installation-guides/base-environment/linux.md)
 

@@ -18,11 +18,11 @@ You may need to reboot after the update.
 
 ## 2. Download and Install Ubuntu from the Microsoft Store
 
-![Microsoft Store](../.gitbook/assets/Microsoft-store.jpg)
+![Microsoft Store](../../.gitbook/assets/Microsoft-store.jpg)
 
 ## 3. Run Ubuntu from the Start Menu
 
-![Ubuntu Logo](../.gitbook/assets/Ubuntu-logo.jpg)
+![Ubuntu Logo](../../.gitbook/assets/Ubuntu-logo.jpg)
 
 ## 4. Get Linux Essentials
 
