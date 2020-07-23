@@ -12,10 +12,6 @@
   * [Text Editor and IDEs](learning-the-basics/what-is-a-local-development-environment-anyway/text-editor-and-ides.md)
   * [The Interpreter](learning-the-basics/what-is-a-local-development-environment-anyway/the-interpreter.md)
 
----
-
-* [base-environment](base-environment.md)
-
 ## Installation Guides
 
 * [Base Environment](installation-guides/base-environment/README.md)
