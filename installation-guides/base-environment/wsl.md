@@ -47,7 +47,7 @@ $ sudo apt install python3-venv
 ```
 
 
-## 6. Add Bash Shortcuts \(optional but very handy\)
+## 6. Add Bash Shortcuts - optional but very handy
 
 - Open the file named `.bashrc` in the nano text editor.
 
@@ -69,7 +69,7 @@ alias .bash="nano ~/.bashrc"
 - Restart Ubuntu.
 
 
-## 7. Virtual Environment Setup \(optional but highly recommended\)
+## 7. Virtual Environment Setup - optional but highly recommended
 
 ```shell script
 $ mkdir project 
