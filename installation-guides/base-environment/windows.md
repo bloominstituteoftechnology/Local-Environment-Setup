@@ -41,25 +41,24 @@ git config --global core.autocrlf true
 
 <h2 id='InstallPython'> 1. Installing Python </h2>
 
-1. Go to [this link](https://www.python.org/downloads/windows/) and download the newest version of Python.<br>
+1. Go to [this link](https://www.python.org/downloads/windows/) and download the newest version of Python.
    - The latest version of the x86-64 executable installer from the stable releases section.
     
 2. Open the executable to begin the Python Installation.
 3. Select "Customize installation".
-4. On the Optional Features page.<br>
-    - Select all of the optional features. <br>
+4. On the Optional Features page.
+    - Select all of the optional features.
     - Click "Next"
 5. On the Advanced Options page, select the following options:
     - Associate files with Python
     - Create shortcuts for installed applications
     - <b>Add Python to environment variables <- This is a very important option to mark</b>
     - Click "Install"
-6. Once it has completed the install, click "Close"<br>
+6. Once it has completed the install, click "Close"
     
 To verify python has installed correctly, open a command prompt and type "python"
-<ul>
-    <li id='opencmd'> Go to the start menu and type "CMD" and hit enter </li>
-</ul> 
+<a id='opencmd'></a>
+<ul><li> Go to the start menu and type "CMD" and hit enter </li></ul> 
 
 If the command line enters into a python interpreter (shown by having ">>>" at the beginning of the line) then type "exit()" and continue to step 2
 
@@ -82,7 +81,8 @@ If the command line doesn't enter into the python interpreter see <a href='#Inst
 
 To verify the installation succeeded, execute the command `pipenv` in the command line
 
-If the command line gives a list of options, then the install was successful. Continue to part 4 <br>
+If the command line gives a list of options, then the install was successful. Continue to part 4
+
 If the command line gives the error "'pipenv' is not recognized as an internal or external command" see <a href='#InstallPipenv'>this section</a>
 
 <h2 id='FirstEnv'> 4. Setting up your first Pip Environment </h2>
@@ -91,13 +91,13 @@ If the command line gives the error "'pipenv' is not recognized as an internal o
     - As an example, the command prompt starts at `C:\Users\(username)`, I could use `cd documents\github\test` to change
     my directory to `C:\Users\(username)\documents\Github\test`
     - For Lambda School units, this will be in each of the sprint repositories. 
-    - For personal projects or other python projects this will be in the folder of that project    
+    - For personal projects or other python projects, this will be in the folder of that project    
 2. Execute the command `pipenv shell` to create a virtual environment in the current directory
 3. Use `pipenv install (packages)` to install the packages that will be used for the current project
     - An example of this command is `pipenv install pandas scipy eli5 matplotlib`
     - You can also specify package versions using `==` for example `pipenv install numpy==1.17.*`
-        - This will install the latest version of numpy 1.17, in this case 1.17.5
-        - Similarly, using `numpy==1.1*` would install the latest version of 1.1x numpy (which is 1.19)
+        - This will install the latest version of NumPy 1.17. In this case, 1.17.5
+        - Similarly, using `numpy==1.1*` would install the latest version of 1.1x NumPy (which is 1.19)
     - If the project is a build-on or for Lambda School units, you will probably be provided a `requirements.txt` file in the repository
         - To install dependencies to your pipenv shell from a requirements file, use `pipenv install -r requirements.txt`
 
