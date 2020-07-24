@@ -12,11 +12,10 @@
   * [Text Editor and IDEs](learning-the-basics/what-is-a-local-development-environment-anyway/text-editor-and-ides.md)
   * [The Interpreter](learning-the-basics/what-is-a-local-development-environment-anyway/the-interpreter.md)
 
-## Installation Guides
+## Base Environments <a id="installation-guides"></a>
 
-* [Base Environment](installation-guides/base-environment/README.md)
-  * [Windows](installation-guides/base-environment/windows.md)
-  * [WSL](installation-guides/base-environment/wsl.md)
-  * [Mac](installation-guides/base-environment/mac.md)
-  * [Linux](installation-guides/base-environment/linux.md)
+* [Windows](installation-guides/windows.md)
+* [WSL](installation-guides/wsl.md)
+* [Mac](installation-guides/mac.md)
+* [Linux](installation-guides/linux.md)
 
