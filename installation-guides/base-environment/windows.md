@@ -57,8 +57,8 @@ git config --global core.autocrlf true
 6. Once it has completed the install, click "Close"
     
 To verify python has installed correctly, open a command prompt and type "python"
-<a id='opencmd'></a>
-<ul><li> Go to the start menu and type "CMD" and hit enter </li></ul> 
+
+<ul><li> <a id='opencmd'>Go to the start menu and type "CMD" and hit enter </a></li></ul> 
 
 If the command line enters into a python interpreter (shown by having ">>>" at the beginning of the line) then type "exit()" and continue to step 2
 
