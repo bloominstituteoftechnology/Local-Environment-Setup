@@ -20,7 +20,7 @@
 
 The next step is configure your credentials with git.
 
-**Your `user.name` variable can be set to any name however you email address should be the one associated with your GitHub account.**
+**Your `user.name` variable can be set to any name; however your email address should be the one associated with your GitHub account.**
 
 ```text
 git config --global user.name <your username>
@@ -52,13 +52,13 @@ git config --global core.autocrlf true
 5. On the Advanced Options page, select the following options:
     - Associate files with Python
     - Create shortcuts for installed applications
-    - <b>Add Python to environment variables <- This is a very imporant option to mark</b>
+    - <b>Add Python to environment variables <- This is a very important option to mark</b>
     - Click "Install"
 6. Once it has completed the install, click "Close"<br>
     
 To verify python has installed correctly, open a command prompt and type "python"
-<ul id='opencmd'>
-    <li> Go to the start menu and type "CMD" and hit enter </li>
+<ul>
+    <li id='opencmd'> Go to the start menu and type "CMD" and hit enter </li>
 </ul> 
 
 If the command line enters into a python interpreter (shown by having ">>>" at the beginning of the line) then type "exit()" and continue to step 2
@@ -79,9 +79,30 @@ If the command line doesn't enter into the python interpreter see <a href='#Inst
 
 1. Use the command `pip install pipenv` to install pipenv to your computer
 2. Close the command prompt and <a href='#opencmd'> open a new command prompt</a>
+
 To verify the installation succeeded, execute the command `pipenv` in the command line
 
 If the command line gives a list of options, then the install was successful. Continue to part 4 <br>
 If the command line gives the error "'pipenv' is not recognized as an internal or external command" see <a href='#InstallPipenv'>this section</a>
 
+<h2 id='FirstEnv'> 4. Setting up your first Pip Environment </h2>
+
+1. In the command prompt, navigate to the desired location of the environment using the command `cd (directory)`
+    - As an example, the command prompt starts at `C:\Users\(username)`, I could use `cd documents\github\test` to change
+    my directory to `C:\Users\(username)\documents\Github\test`
+    - For Lambda School units, this will be in each of the sprint repositories. 
+    - For personal projects or other python projects this will be in the folder of that project    
+2. Execute the command `pipenv shell` to create a virtual environment in the current directory
+3. Use `pipenv install (packages)` to install the packages that will be used for the current project
+    - An example of this command is `pipenv install pandas scipy eli5 matplotlib`
+    - You can also specify package versions using `==` for example `pipenv install numpy==1.17.*`
+        - This will install the latest version of numpy 1.17, in this case 1.17.5
+        - Similarly, using `numpy==1.1*` would install the latest version of 1.1x numpy (which is 1.19)
+    - If the project is a build-on or for Lambda School units, you will probably be provided a `requirements.txt` file in the repository
+        - To install dependencies to your pipenv shell from a requirements file, use `pipenv install -r requirements.txt`
+
+<h2 id='JupNote'> 5. Running Jupyter Notebooks </h2>
+
+1. In your pip environment from <a href='#FirstEnv'>section 4</a>, run the command `pipenv install notebook` to install Jupyter Notebooks
+2. To start Jupyter Notebook in your current directory, simply run `pipenv run jupyter notebook`
 
