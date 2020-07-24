@@ -69,7 +69,7 @@ If the command line doesn't enter into the python interpreter see <a href='#Inst
 1. In the command line, run the following commands to download and install Pip<br>
     - `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
     - `python get-pip.py`
-2. Close the Command Prompt and <a href='#OpenCmd'>open a new Command Prompt</a>
+2. Close the Command Prompt and open a new Command Prompt
 3. Verify pip installed successfully by executing the command "pip" in the command line
     - If the command line says "'pip' is not recognized as an internal or external command" see <a href='#InstallPip'>this section</a>
     - Else, continue to part 3
@@ -77,7 +77,7 @@ If the command line doesn't enter into the python interpreter see <a href='#Inst
 <h2 id='InstallPipenv'> 3. Installing Pipenv </h2>
 
 1. Use the command `pip install pipenv` to install pipenv to your computer
-2. Close the command prompt and <a href='#OpenCmd'> open a new command prompt</a>
+2. Close the command prompt and open a new command prompt
 
 To verify the installation succeeded, execute the command `pipenv` in the command line
 
