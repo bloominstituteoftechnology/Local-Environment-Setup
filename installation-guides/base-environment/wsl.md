@@ -1,41 +1,49 @@
 # WSL
 
+## Update Windows 10
 
+Ensure that you have the most current update from Windows. Currently to install WSL2 you must have **Build 1904** or higher. To check your Windows version open the run command dialog using 
 
-## 0. Update Windows 10
+## Enable WSL2 on Windows 10
 
-You may need to reboot after the update.
+To open the Powershell as an administr
 
-## 1. Enable WSL2 on Windows 10
+`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 
-1. Open PowerShell as Admin
-2. Paste the following and hit enter after each:
-   * `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
-   * `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
-3. Reboot Windows
-4. Set WSL default version
-   * `wsl --set-default-version 2`
+`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart`
 
-## 2. Download and Install Ubuntu from the Microsoft Store
+Reboot Windows
+
+Set WSL default version
+
+`wsl --set-default-version 2`
+
+## Download and Install Ubuntu from the Microsoft Store
 
 ![Microsoft Store](../../.gitbook/assets/Microsoft-store.jpg)
 
-## 3. Run Ubuntu from the Start Menu
+## Run Ubuntu from the Start Menu
 
 ![Ubuntu Logo](../../.gitbook/assets/Ubuntu-logo.jpg)
 
-## 4. Get Linux Essentials
-
-\`\`\`shell script $ sudo apt update --fix-missing $ sudo apt upgrade $ sudo apt install build-essential $ sudo apt install cmake
+## Get Linux Essentials
 
 ```text
-### 5. Get Python Essentials
-```shell script
+$ sudo apt update --fix-missing 
+
+$ sudo apt upgrade 
+
+$ sudo apt install build-essential
+
+$ sudo apt install cmake
+```
+
+```text
 $ sudo apt install python3-pip
 $ sudo apt install python3-venv
 ```
 
-## 6. Add Bash Shortcuts \(optional but very handy\)
+## Add Bash Shortcuts \(optional but very handy\)
 
 * Open the file named `.bashrc` in the nano text editor.
 
