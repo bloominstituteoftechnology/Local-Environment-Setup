@@ -65,7 +65,7 @@ If the command line doesn't enter into the python interpreter see [this section]
 ##  2. Installing Pip <a id="InstallPip"></a>
 
 1. In the command line, run the following commands to download and install Pip 
-   * `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
+   * `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`<br>
        -If you get an error that says "'curl' is not recognized as an internal or external command" see [this section](windows.md#curl)
    * `python get-pip.py`
 2. Close the Command Prompt and open a new Command Prompt
