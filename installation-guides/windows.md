@@ -66,6 +66,7 @@ If the command line doesn't enter into the python interpreter see [this section]
 
 1. In the command line, run the following commands to download and install Pip 
    * `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
+       -If you get an error that says "'curl' is not recognized as an internal or external command" see [this section](windows.md#curl)
    * `python get-pip.py`
 2. Close the Command Prompt and open a new Command Prompt
 3. Verify pip installed successfully by executing the command "pip" in the command line
@@ -106,3 +107,36 @@ If the command line gives the error "'pipenv' is not recognized as an internal o
 1. In your pip environment from [section 4](windows.md#FirstEnv), run the command `pipenv install notebook` to install Jupyter Notebooks
 2. To start Jupyter Notebook in your current directory, simply run `pipenv run jupyter notebook`
 
+## Extras
+### Installing cURL <a id="curl"></a>
+1. Installing cURL after installing Git Bash / Git for Windows
+   - If you have installed git, you already have a usable instance of cURL in your files
+   - Navigate to the folder you installed Git
+       - This will probably be something like `C:\Program Files\Git`
+   - From the base Git directory, search in this folder for `curl`
+       - It should pop us as `curl.exe`
+   - Right-click on this file and select `open file location`
+   - Click on the navigation bar and copy the path to this folder
+   - Next, in the windows task bar search `env` and hit enter
+   - In the "System Properties" window, click `Environment Variables...`
+   - In the `User variables for <user>` section find the Variable called `Path` and double click it
+   - On the right side, click New and use Ctrl+v to paste the path you copied before into a new environment path
+   - You should now be able to use the command `curl` in the command prompt
+       - To verify it worked, open a command prompt and use `curl --help`
+       
+       
+2. Installing cURL from scratch
+   - Go to [this link](https://curl.haxx.se/windows/) and download either the 32-bit or 64-bit version for your system
+   - Next, open a windows explorer window and navigate to the C: drive
+       - Often in the directory window on the right side, it will be called `Windows (C:)`
+   - Right click anywhere that is not on a file inside the windows explorer and create a new folder named `curl`
+   - From your downloads, extract the zipped curl file you downloaded from the website into this new `curl` folder
+   - Now go to [this link](https://curl.haxx.se/docs/caextract.html) and download the certificate that allows curl to access the web
+   - Move this new file into your `curl` folder as well and rename the moved file to `curl-ca-bundle.crt`
+   - Now copy this folder's path or just remember it (`C:\curl`)
+   - Next, in the windows task bar search `env` and hit enter
+   - In the "System Properties" window, click `Environment Variables...`
+   - In the `User variables for <user>` section find the Variable called `Path` and double click it
+   - On the right side, click New and use Ctrl+v to paste the path you copied before or memorized into a new environment path
+   - You should now be able to use the command `curl` in the command prompt
+      - To verify it worked, open a command prompt and use `curl --help`
