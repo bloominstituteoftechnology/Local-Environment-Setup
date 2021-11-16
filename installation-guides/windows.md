@@ -91,7 +91,7 @@ If the command line gives the error "'pipenv' is not recognized as an internal o
 
      my directory to `C:\Users\(username)\documents\Github\test`
 
-   * For Lambda School units, this will be in each of the sprint repositories. 
+   * For BloomTech units, this will be in each of the sprint repositories. 
    * For personal projects or other python projects, this will be in the folder of that project    
 2. Execute the command `pipenv shell` to create a virtual environment in the current directory
 3. Use `pipenv install (packages)` to install the packages that will be used for the current project
@@ -99,7 +99,7 @@ If the command line gives the error "'pipenv' is not recognized as an internal o
    * You can also specify package versions using `==` for example `pipenv install numpy==1.17.*`
      * This will install the latest version of NumPy 1.17. In this case, 1.17.5
      * Similarly, using `numpy==1.1*` would install the latest version of 1.1x NumPy \(which is 1.19\)
-   * If the project is a build-on or for Lambda School units, you will probably be provided a `requirements.txt` file in the repository
+   * If the project is a build-on or for BloomTech units, you will probably be provided a `requirements.txt` file in the repository
      * To install dependencies to your pipenv shell from a requirements file, use `pipenv install -r requirements.txt`
 
 ##  5. Running Jupyter Notebooks <a id="JupNote"></a>
